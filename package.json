@@ -1,6 +1,6 @@
 {
-  "name": "cornerstone-wado-image-loader",
-  "version": "0.0.0-semantically-released",
+  "name": "cornerstone-wado-image-loader-hurwa",
+  "version": "1.0.3",
   "description": "Cornerstone Image Loader for DICOM WADO-URI and WADO-RS",
   "keywords": [
     "DICOM",
@@ -9,13 +9,13 @@
     "medical",
     "imaging"
   ],
-  "author": "Chris Hafey",
-  "homepage": "https://github.com/cornerstonejs/cornerstoneWADOImageLoader",
+  "author": "",
+  "homepage": "https://github.com/chenyuzheng/cornerstone-wado-image-loader-hurwa",
   "license": "MIT",
   "main": "./dist/cornerstoneWADOImageLoader.bundle.min.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cornerstonejs/cornerstoneWADOImageLoader.git"
+    "url": "git+https://github.com/chenyuzheng/cornerstone-wado-image-loader-hurwa.git"
   },
   "scripts": {
     "cm": "npx git-cz",
@@ -127,5 +127,13 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "bugs": {
+    "url": "https://github.com/chenyuzheng/cornerstone-wado-image-loader-hurwa/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "test"
   }
 }

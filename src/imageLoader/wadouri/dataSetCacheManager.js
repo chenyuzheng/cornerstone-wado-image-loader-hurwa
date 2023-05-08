@@ -124,16 +124,19 @@ function load(uri, loadRequest = xhrRequest, imageId) {
               fileTotalLength: partialContent.fileTotalLength,
             });
           } else {
-            let res = '', byte, step = 4, position = 128
+            let res = '';
+            let byte;
+            let step = 4;
+            let position = 128;
             for (var i = 0; i < step; i++) {
-              byte = byteArray[position + i]
-              if (byte === 0) position += step // 跳过文件头部128个字节
-              res += String.fromCharCode(byte)
+              byte = byteArray[position + i];
+              if (byte === 0) position += step; // 跳过文件头部128个字节
+              res += String.fromCharCode(byte);
             }
-            if(res !== 'DICM'){
+            if (res !== 'DICM') {
               const options = { TransferSyntaxUID: '1.2.840.10008.1.2' };
-              dataSet = dicomParser.parseDicom(byteArray,options);
-            }else{
+              dataSet = dicomParser.parseDicom(byteArray, options);
+            } else {
               dataSet = dicomParser.parseDicom(byteArray);
             }
           }
