@@ -4,6 +4,7 @@ import dataSetCacheManager from './dataSetCacheManager.js';
 import loadFileRequest from './loadFileRequest.js';
 import getPixelData from './getPixelData.js';
 import { xhrRequest } from '../internal/index.js';
+import loadBufferRequest from './loadBufferRequest';
 
 // add a decache callback function to clear out our dataSetCacheManager
 function addDecache(imageLoadObject, imageId) {
@@ -131,6 +132,8 @@ function getLoaderForScheme(scheme) {
     return xhrRequest;
   } else if (scheme === 'dicomfile') {
     return loadFileRequest;
+  } else if (scheme === 'dicombuffer'){
+    return loadBufferRequest;
   }
 }
 

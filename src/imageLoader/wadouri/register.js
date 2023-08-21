@@ -6,6 +6,7 @@ export default function (cornerstone) {
   cornerstone.registerImageLoader('dicomweb', loadImage);
   cornerstone.registerImageLoader('wadouri', loadImage);
   cornerstone.registerImageLoader('dicomfile', loadImage);
+  cornerstone.registerImageLoader('dicombuffer', loadImage);
 
   // add wadouri metadata provider
   cornerstone.metaData.addProvider(metaDataProvider);
