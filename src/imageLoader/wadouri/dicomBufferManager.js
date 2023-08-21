@@ -19,8 +19,8 @@ function add(imageId, dicomBuffer) {
  */
 function pushIndex(index) {
   let imageId = `dicombuffer:${index}`;
-  const imageIdIndex = imageIds.push(imageId)
-  dicomBufferMap[`${imageId}`] = undefined
+  const imageIdIndex = imageIds.push(imageId);
+  dicomBufferMap[`${imageId}`] = undefined;
   return imageIdIndex;
 }
 
