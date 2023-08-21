@@ -132,7 +132,7 @@ function getLoaderForScheme(scheme) {
     return xhrRequest;
   } else if (scheme === 'dicomfile') {
     return loadFileRequest;
-  } else if (scheme === 'dicombuffer'){
+  } else if (scheme === 'dicombuffer') {
     return loadBufferRequest;
   }
 }

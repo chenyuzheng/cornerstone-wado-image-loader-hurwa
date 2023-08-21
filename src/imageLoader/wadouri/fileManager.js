@@ -1,9 +1,9 @@
 let files = [];
 
-function add(file) {
+function add(file, prefix = 'dicomfile') {
   const fileIndex = files.push(file);
 
-  return `dicomfile:${fileIndex - 1}`;
+  return `${prefix}:${fileIndex - 1}`;
 }
 
 function get(index) {

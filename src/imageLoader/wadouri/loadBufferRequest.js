@@ -11,7 +11,7 @@ function loadBufferRequest(uri) {
     // console.log(dicomBuffer)
     if (typeof dicomBuffer == 'undefined') {
       // console.log("undefined")
-      reject('dicomBuffer undefined')
+      reject('dicomBuffer undefined');
     }
     resolve(dicomBuffer);
   });
